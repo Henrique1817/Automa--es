@@ -1,0 +1,5 @@
+PyQt5==5.15.7
+selenium==4.1.0
+webdriver-manager==3.5.4
+pywhatkit==5.1
+pywin32==303/ sys_platform == 'win32'

@@ -1,0 +1,24 @@
+Date: 17/8/2025
+Time: 23:1
+Phone Number: +5511964455296
+Image: C:\Learn_SA\Automações\Whats_Screenshot\screenshot.png
+Caption: Print do site solicitado
+--------------------
+Date: 17/8/2025
+Time: 23:3
+Phone Number: +5511964455296
+Image: C:\Learn_SA\Automações\Whats_Screenshot\website_screenshot.png
+Caption: Print do site solicitado
+--------------------
+Date: 18/8/2025
+Time: 8:17
+Phone Number: +5511964455296
+Image: C:\Learn_SA\Automações\Whats_Screenshot\website_screenshot.png
+Caption: Print do site solicitado
+--------------------
+Date: 18/8/2025
+Time: 8:18
+Phone Number: +5511964455296
+Image: C:\Learn_SA\Automações\Whats_Screenshot\website_screenshot.png
+Caption: Print do site solicitado
+--------------------
