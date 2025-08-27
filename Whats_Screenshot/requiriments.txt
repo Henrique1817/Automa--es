@@ -3,3 +3,5 @@ selenium==4.1.0
 webdriver-manager==3.5.4
 pywhatkit==5.1
 pywin32==303/ sys_platform == 'win32'
+
+feed-left-sidebar col-md-4 col-lg-3 color-border-muted border-bottom hide-md hide-sm border-right color-bg-default 

@@ -10,15 +10,16 @@ import sys
 class automatcThread(QThread):
     finished = pyqtSignal(bool, str) # Sinal para indicar que a automação foi concluída
 
-    def __init__(self, website, phone_number):
+    def __init__(self, website, phone_number, mens):
         super().__init__() # Inicializa a classe base QThread
         self.website = website
         self.phone_number = phone_number
+        self.mens = mens
     
     # self.run() é o método que será executado quando o thread for iniciado. Self é uma referência à instância atual da classe, permitindo acessar seus atributos e métodos.
     def run(self):
         try:
-            automation.run_automation(self.website, self.phone_number) # Chama a função de automação com os parâmetros fornecidos
+            automation.run_automation(self.website, self.phone_number, self.mens) # Chama a função de automação com os parâmetros fornecidos
             self.finished.emit(True, "Print enviado com sucesso") # Emite o sinal
         except Exception as e:
             self.finished.emit (False, f"Erro ao enviar: {str(e)}") # Emite o sinal com erro; o "e" é a exceção capturada, e "str(e)" converte a exceção em uma string para exibição.
@@ -31,7 +32,7 @@ class WhatsAppAutomatiouUI(QMainWindow): # Classe principal da interface gráfic
         
     def initUI(self): # Método para configurar a interface do usuário
         self.setWindowTitle("WhatsApp Screenshot Automação") # Define o título da janela
-        self.setGeometry(300, 300, 400, 200) # Define a geometria da janela (x, y, largura, altura)
+        self.setGeometry(500, 500, 600, 400) # Define a geometria da janela (x, y, largura, altura)
 
         # Icone da janela
         try:
@@ -64,6 +65,14 @@ class WhatsAppAutomatiouUI(QMainWindow): # Classe principal da interface gráfic
         phone_layout.addWidget(self.phone_input)
         layout.addLayout(phone_layout)
 
+        #Campo para adicionar a mensagem
+        mens_layout = QHBoxLayout()
+        mens_layout.addWidget(QLabel("Menssgem Desejada:"))
+        self.mens_input = QLineEdit()
+        self.mens_input.setPlaceholderText("Print solicitado.")
+        mens_layout.addWidget(self.mens_input)
+        layout.addLayout(mens_layout)
+
         # Botão para enviar 
 
         self.send_button = QPushButton("Enviar Print")
@@ -77,7 +86,7 @@ class WhatsAppAutomatiouUI(QMainWindow): # Classe principal da interface gráfic
     def initTrayIcon(self): # Método para inicializar o ícone da bandeja do sistema
         self.tray_icon = QSystemTrayIcon(self)
         if self.tray_icon.isSystemTrayAvailable(): # Verifica se a bandeja do sistema está disponível
-            self.tray_icon.setIcon(QIcon("icon_whats.icoo")) # Define o ícone da bandeja do sistema 
+            self.tray_icon.setIcon(QIcon("icon_whats.ico")) # Define o ícone da bandeja do sistema 
         else:
             pass
 
@@ -102,6 +111,7 @@ class WhatsAppAutomatiouUI(QMainWindow): # Classe principal da interface gráfic
     def start_automation(self):
         website = self.website_input.text().strip()
         phone = self.phone_input.text().strip()
+        mens = self.mens_input.text().strip()
 
         if not website or not phone:
             QMessageBox.warning(self, "Atenção", "É necessário preencher todos os campos!")
@@ -112,23 +122,24 @@ class WhatsAppAutomatiouUI(QMainWindow): # Classe principal da interface gráfic
             phone = "+" + phone
         
         if not website.startswith("https://"):
-            website = "https://www." + website
+            
+            website = "https://" + website
 
         self.send_button.setEnabled(False)
         self.send_button.setText("Processando...")
 
-        self.automation_thread = automatcThread(website, phone)
+        self.automation_thread = automatcThread(website, phone, mens)
         self.automation_thread.finished.connect(self.automation_finished)
         self.automation_thread.start()
 
-    def automation_finished(self, sucesso, menssagem):
+    def automation_finished(self, sucesso, mens):
         self.send_button.setEnabled(True)
         self.send_button.setText("Enviar Print")
 
         if sucesso:
-            QMessageBox.information(self, "Sucesso", menssagem)
+            QMessageBox.information(self, "Sucesso", mens)
         else:
-            QMessageBox.critical(self, "Erro", menssagem)       
+            QMessageBox.critical(self, "Erro", mens)       
 
     def quit_app(self):
         self.tray_icon.hide()
@@ -138,5 +149,3 @@ class WhatsAppAutomatiouUI(QMainWindow): # Classe principal da interface gráfic
         event.ignore()
         self.hide()
         QMessageBox.information(self, "Aviso", "O aplicativo continua rodando em segundo plano, caso queira finalizar, clique no icone 'Sair' da bandeja")
-
-

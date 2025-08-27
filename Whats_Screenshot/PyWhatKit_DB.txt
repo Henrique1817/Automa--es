@@ -22,3 +22,81 @@ Phone Number: +5511964455296
 Image: C:\Learn_SA\Automações\Whats_Screenshot\website_screenshot.png
 Caption: Print do site solicitado
 --------------------
+Date: 18/8/2025
+Time: 15:47
+Phone Number: +5511964455296
+Image: C:\Learn_SA\Automações\Whats_Screenshot\website_screenshot.png
+Caption: Print do site solicitado
+--------------------
+Date: 19/8/2025
+Time: 14:45
+Phone Number: +5511964455296
+Image: C:\Learn_SA\Automações\Whats_Screenshot\website_screenshot.png
+Caption: Teste mensagem
+--------------------
+Date: 19/8/2025
+Time: 16:7
+Phone Number: +5511964455296
+Image: C:\Learn_SA\Automações\Whats_Screenshot\website_screenshot.png
+Caption: Teste para site especifico
+--------------------
+Date: 19/8/2025
+Time: 16:14
+Phone Number: +5511964455296
+Image: C:\Learn_SA\Automações\Whats_Screenshot\website_screenshot.png
+Caption: Print solicitado
+--------------------
+Date: 19/8/2025
+Time: 16:17
+Phone Number: +55964455296
+Image: C:\Learn_SA\Automações\Whats_Screenshot\website_screenshot.png
+Caption: Teste
+--------------------
+Date: 19/8/2025
+Time: 16:20
+Phone Number: +5511964455296
+Image: C:\Learn_SA\Automações\Whats_Screenshot\website_screenshot.png
+Caption: or
+--------------------
+Date: 19/8/2025
+Time: 16:28
+Phone Number: +5511964455296
+Image: C:\Learn_SA\Automações\Whats_Screenshot\website_screenshot.png
+Caption: Print
+--------------------
+Date: 19/8/2025
+Time: 16:32
+Phone Number: +5511964455296
+Image: C:\Learn_SA\Automações\Whats_Screenshot\website_screenshot.png
+Caption: Print
+--------------------
+Date: 19/8/2025
+Time: 16:47
+Phone Number: +5511964455296
+Image: C:\Learn_SA\Automações\Whats_Screenshot\website_screenshot.png
+Caption: Print
+--------------------
+Date: 19/8/2025
+Time: 16:49
+Phone Number: +5511964455296
+Image: C:\Learn_SA\Automações\Whats_Screenshot\website_screenshot.png
+Caption: Print
+--------------------
+Date: 19/8/2025
+Time: 16:52
+Phone Number: +5511964455296
+Image: C:\Learn_SA\Automações\Whats_Screenshot\website_screenshot.png
+Caption: Teste
+--------------------
+Date: 19/8/2025
+Time: 16:55
+Phone Number: +5511964455296
+Image: C:\Learn_SA\Automações\Whats_Screenshot\website_screenshot.png
+Caption: Teste
+--------------------
+Date: 19/8/2025
+Time: 19:4
+Phone Number: +5511941926402
+Image: C:\Learn_SA\Automações\Whats_Screenshot\website_screenshot.png
+Caption: Teste
+--------------------
