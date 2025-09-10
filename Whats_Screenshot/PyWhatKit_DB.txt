@@ -100,3 +100,21 @@ Phone Number: +5511941926402
 Image: C:\Learn_SA\Automações\Whats_Screenshot\website_screenshot.png
 Caption: Teste
 --------------------
+Date: 27/8/2025
+Time: 9:45
+Phone Number: +5511964455296
+Image: C:\Learn_SA\Automações\Whats_Screenshot\website_screenshot.png
+Caption: print
+--------------------
+Date: 9/9/2025
+Time: 9:31
+Phone Number: +5511964455296
+Image: C:\Learn_SA\Automações\Whats_Screenshot\website_screenshot.png
+Caption: 
+--------------------
+Date: 9/9/2025
+Time: 9:42
+Phone Number: +5511964455296
+Image: C:\Learn_SA\Automações\Whats_Screenshot\website_screenshot.png
+Caption: Print solicitado
+--------------------
